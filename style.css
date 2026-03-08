@@ -66,8 +66,40 @@ max-width:500px;
 }
 
 .hero h1{
-    font-size: 50px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
+
+.hero h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin-top:20px;
+justify-content: center;
+align-items: center;
+}
+
+
+.btn{
+background:#38bdf8;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+}
+
+.btn-outline{
+border:2px solid #38bdf8;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+color:#38bdf8;
+}
+
 
 .hero-image img{
 width:250px;
@@ -82,6 +114,37 @@ box-shadow:0 0 20px rgba(56,189,248,0.6);
 transform:scale(1.05);
 transition:0.3s;
 }
+
+.menu-icon{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* mobile view */
+@media (max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+background:#020617;
+position:absolute;
+top:70px;
+right:0;
+width:200px;
+padding:20px;
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-icon{
+display:block;
+}
+
+}
+
 
 .project-card img{
 width:100%;
@@ -186,19 +249,46 @@ opacity:0.8;
 
 
 #typing{
-    color:#38bdf8;
-    font-size: 22px;
-    border-right:2px solid #38bdf8;
-    padding-right: 5px;
+color:#38bdf8;
+border-right:2px solid #38bdf8;
+padding-right:5px;
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+0%,100%{border-color:transparent}
+50%{border-color:#38bdf8}
 }
 
 section{
-    padding: 50px 10%;
+    padding: 20px 10%;
 }
 
 #about p{
 max-width:700px;
 line-height:1.6;
+}
+
+#contact a{
+color:white;
+text-decoration:none;
+}
+
+#contact a:hover{
+color:#38bdf8;
+}
+
+#contact i{
+font-size:22px;
+margin-right:10px;
+color:#38bdf8;
+}
+
+#contact p{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
 }
 
 /* inventory project */
@@ -350,3 +440,4 @@ transition:0.3s;
 .project-image img:hover{
 transform:scale(1.05);
 }
+

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,13 +20,17 @@
 
 <h2 class="logo">Shashank</h2>
 
-    <nav>
-        <a href="#">Home</a>
+    <nav id="nav-links">
+        <a href="#Home"></a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <div class="menu-icon" id="menu-icon">
+    ☰
+    </div>
 
 </header>
 
@@ -33,15 +38,20 @@
     <div class="hero-content">
         <div class="hero-text">
             <h1>Hi, I'm Shashank</h1>
-            <p>Focused on Java, Data Structures, and Backend Development.</p>
+            <h2>Java Backend Developer</h2>
         
             <p>
             <span id="typing"></span>
             </p>
 
-            <a href="#projects">
-            <button>View Projects</button>
-            </a>
+            <div class="hero-buttons">
+                <a href="#projects">
+                <button>View Projects</button>
+                </a>
+                <a href="resume.pdf" download>
+                <button>Download Resume</button>
+                </a>
+            </div>
          </div>
         
          <div class="hero-image">
@@ -49,12 +59,15 @@
          </div>
 
     </div>
+
 </section>
+
 
 
 <section id="about">
     <h2>About Me</h2>
         <p>
+        Aspiring Java Developer | MCA Student | Passionate about building scalable software and solving real-world problems<br>
         I am an MCA student with a strong interest in software development and problem-solving.
         My primary programming language is Java, and I also work with Python, HTML, and CSS.
         I enjoy building practical applications and continuously improving my skills in data
@@ -163,11 +176,21 @@
 <section id="contact">
     <h2>Contact</h2>
 
-    <p>Email: <a href="mailto:shashankcharpe5652@gmail.com"  target="_blank">shashankcharpe5652@gmail.com</a></p>
+<p>
+<i class="devicon-github-original colored"></i>
+<a href="https://github.com/shashank12125">GitHub</a>
+</p>
 
-    <p>GitHub: <a href="https://github.com/shashank12125" target="_blank">github.com/shashank12125</a></p>
+<p>
+<i class="devicon-linkedin-plain colored"></i>
+<a href="https://linkedin.com/in/shashank">LinkedIn</a>
+</p>
 
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shashankcharpe12125"  target="_blank">linkedin.com/in/shashank</a></p>
+<p>
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:shashankcharpe5652@gmail.com">Email</a>
+</p>
+
 </section>
 
 

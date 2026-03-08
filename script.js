@@ -1,5 +1,5 @@
 const text = 
-"Aspiring Java Developer | MCA Student | Passionate about building scalable software and solving real-world problems";
+"I build backend applications using Java, Spring Boot, and MySQL. Passionate about problem solving and building practical software systems";
 let index = 0;
 function typeEffect(){
     if(index < text.length) {
@@ -29,3 +29,11 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.getElementById("nav-links");
+
+menuIcon.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+
