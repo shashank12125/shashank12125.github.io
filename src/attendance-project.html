@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Face Recognition Attendance System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="project-detail">
+
+    <h1>Face Recognition Attendance System</h1>
+    
+     <div class="project-image">
+            <img src="images/FaceRecognitionLogo.png" alt="FaceRecognitionLogo">
+         </div>
+    <p>
+    An AI-based attendance management system that automatically detects
+    and recognizes faces using computer vision and marks attendance.
+    </p>
+
+    <h2>Project Overview</h2>
+    <p>
+    This project is an automated attendance management system built using
+    Python, OpenCV, and Scikit-Learn. The system captures faces through a
+    webcam, recognizes registered users using a KNN machine learning model,
+    and automatically records attendance in CSV files. It removes the need
+    for manual attendance and improves efficiency.
+    </p>
+
+
+
+</section>
+
+<section>
+    <h2>Features</h2>
+    <ul>
+        <li>Real-time face detection using OpenCV</li>
+        <li>Face recognition using KNN machine learning algorithm</li>
+        <li>Register new users by capturing face data</li>
+        <li>Automatic attendance recording</li>
+        <li>Attendance stored in CSV files</li>
+        <li>Simple dashboard using Streamlit</li>
+    </ul>
+</section>
+
+<section>
+
+<h2>Screenshots</h2>
+
+<h2>How the System Works</h2>
+
+<div class="step-container">
+
+<div class="step">
+
+<h3>Step 1: Register Face</h3>
+
+<p>
+User registers by capturing face images through the webcam.
+The system stores the face dataset for future recognition.
+</p>
+
+<img src="images/RegisterFace.png" alt="Register Face">
+
+</div>
+
+
+<div class="step">
+
+<h3>Step 2: Face Detection</h3>
+
+<p>
+The system uses OpenCV Haar Cascade to detect faces
+from the webcam in real time.
+</p>
+
+<img src="images/FaceDetection.png" alt="Face Detection">
+
+</div>
+
+
+<div class="step">
+
+<h3>Step 3: Face Recognition</h3>
+
+<p>
+The system compares detected faces with stored data
+using the KNN machine learning algorithm.
+</p>
+
+<img src="images/FaceRecognition.png" alt="Face Recognition">
+
+</div>
+
+
+<div class="step">
+
+<h3>Step 4: Attendance Marked</h3>
+
+<p>
+Once the face is recognized, the system automatically
+records attendance with name and timestamp in a CSV file.
+</p>
+
+<img src="images/AttendanceRecorded.png" alt="Attendance Recorded">
+
+</div>
+
+</div>
+</section>
+
+<section>
+    <h2>Tech Stack</h2>
+    <ul>
+        <li>Python</li>
+        <li>OpenCV</li>
+        <li>NumPy</li>
+        <li>Scikit-Learn (KNN)</li>
+        <li>Pandas</li>
+        <li>Streamlit</li>
+    </ul>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+</section>
+
+<section>
+<a href="https://github.com/shashank12125/Face-Recognition-Attendance-System" target="_blank">
+<button>View Source Code on GitHub</button>
+</a>
+
+</section>
+
+</body>
+
+</html>
